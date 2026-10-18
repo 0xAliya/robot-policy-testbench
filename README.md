@@ -24,6 +24,8 @@
 ```bash
 uv sync                               # 按 uv.lock 安装依赖
 uv run scripts/01_pytorch_quickstart.py
+uv run scripts/02_train_sac.py         # 约 6 分钟
+uv run scripts/03_record_gif.py
 ```
 
 ## 目录
@@ -31,5 +33,7 @@ uv run scripts/01_pytorch_quickstart.py
 | 路径 | 内容 |
 |---|---|
 | `scripts/01_pytorch_quickstart.py` | PyTorch 官方 Quickstart：FashionMNIST 分类，在 MPS 上训练 2 个 epoch |
+| `scripts/02_train_sac.py` | SAC 训练 Reacher-v5 5 万步，每 5000 步评估；输出 `results/learning_curve.png`、`models/sac_reacher.zip` |
+| `scripts/03_record_gif.py` | 加载模型录 3 段回合 → `results/reacher.gif` |
 | `docs/01_pytorch_quickstart_讲解.md` | 01 脚本的逐行讲解和自测问答 |
 
