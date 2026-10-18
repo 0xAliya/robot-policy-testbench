@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# 数据 / 模型 / 训练产物
+data/
+*.pth
+*.pt
+*.zip
+runs/
+logs/
+videos/
+*.mp4
+*.gif
+
+# 系统 / 编辑器
+.DS_Store
+.vscode/
+.idea/
